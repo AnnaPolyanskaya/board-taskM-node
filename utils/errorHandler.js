@@ -1,6 +1,6 @@
-module.exports.errorHandler = (res, errormessage) => {
+module.exports = (res, error) => {
     res.status(500).json({
         success: false,
-        message: error.message ? error.message : error
+        error_message: error.error_message ? error.error_message : error
     })
 }

@@ -28,7 +28,7 @@ module.exports.register = async (req, res) => {
                         }
                         if(user){
                             res.status(403).json({
-                                error: 'User alseady exists'
+                                error: 'User already exists'
                             })
                         } else {
                             candidate.save()
